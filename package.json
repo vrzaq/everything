@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "start": "pm2 start index.js"
+    },
+    "name": "everything",
+    "version": "1.0.0",
+    "type": "module",
+    "dependencies": {
+        "@adiwajshing/baileys": "^4.4.0",
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "fs":"^0.0.1-security",
+        "axios":"^1.1.2",
+        "node-fetch":"^3.2.10"
+    }
+}
