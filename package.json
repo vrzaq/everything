@@ -1,15 +1,50 @@
 {
     "scripts": {
-        "start": "pm2 start index.js"
+        "start": "nodemon index.js"
     },
-    "name": "everything",
-    "version": "1.0.0",
+    "nodemonConfig": {
+        "ignore": [
+            "/root/xyvnz/*"
+        ],
+        "delay": 2500
+    },
+    "name": "es6",
+    "version": "3.0.0",
     "type": "module",
     "dependencies": {
-        "@adiwajshing/baileys": "^4.4.0",
+        "@adiwajshing/baileys": "*",
         "@adiwajshing/keyed-db": "^0.2.4",
-        "fs":"^0.0.1-security",
-        "axios":"^1.1.2",
-        "node-fetch":"^3.2.10"
+        "@bochilteam/scraper": "^2.0.0",
+        "acrcloud": "latest",
+        "awesome-phonenumber": "^3.2.0",
+        "axios": "^0.26.0",
+        "chalk": "^5.0.0",
+        "cheerio": "^1.0.0-rc.10",
+        "emoji-regex": "^10.0.1",
+        "express": "*",
+        "fake-useragent": "*",
+        "file-type": "latest",
+        "form-data": "^4.0.0",
+        "got": "^12.0.1",
+        "gtts": "latest",
+        "human-readable": "^0.2.1",
+        "javascript-obfuscator": "latest",
+        "jawaskrip": "*",
+        "jimp": "^0.16.1",
+        "jsdom": "^19.0.0",
+        "link-preview-js": "^2.1.15",
+        "moment-timezone": "^0.5.34",
+        "node-fetch": "^3.2.0",
+        "node-webpmux": "^3.1.1",
+        "pino-pretty": "*",
+        "puppeteer": "^14.4.1",
+        "qrcode": "latest",
+        "qrcode-terminal": "latest",
+        "request-promise": "^4.2.6",
+        "syntax-error": "*",
+        "tinycolor2": "*",
+        "vm2": "^3.9.9",
+        "wa-sticker-formatter": "^4.3.2",
+        "yt-search": "^2.10.3"
     }
 }
